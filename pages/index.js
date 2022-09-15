@@ -1,7 +1,5 @@
 import Comment from "../components/Comment";
 import PostOwner from "../components/PostOwner";
-import Reply from "../components/Reply";
-import { comments } from "../libs/comments";
 
 export default function Home() {
   return (
@@ -17,12 +15,7 @@ export default function Home() {
         {/* PostOwner Example*/}
         <PostOwner />
 
-        {/* Comment Example */}
-        {comments.map((a, i) => {
-          return <Comment />;
-        })}
-        {/* Reply Example */}
-        <Reply></Reply>
+        <Comment />
       </div>
     </div>
   );
